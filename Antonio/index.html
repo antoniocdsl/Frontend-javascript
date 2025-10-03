@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atividade Front</title>
+</head>
+<body>
+    <h1>Questão 2: Área do Triângulo</h1>
+
+    <label for="elevacao">Altura: </label>
+    <input type="number" id="elevacao">
+    <br><br>
+
+    <label for="fundamento">Base: </label>
+    <input type="number" id="fundamento">
+    <br><br>
+
+    <button id="computar">Calcular</button>
+    <p id="saida"></p>
+
+<!---------------------------------------------->
+    <br><br>
+    <h1>Questão 3: Par ou Ímpar </h1>
+
+    <label for="valorDigitado">Digite um número: </label>
+    <input type="number" id="valorDigitado">
+    <br><br>
+
+    <button id="analisar">Verificar</button>
+
+    <p id="saidaAnalise"></p>
+
+<!---------------------------------------------->
+    <br><br>
+    <h1>Questão 4: Número Maior </h1>
+
+    <label>Número 1: </label>
+    <input type="number" id="valor1">
+    <br><br>
+
+    <label>Número 2: </label>
+    <input type="number" id="valor2">
+    <br><br>
+
+    <label>Número 3: </label>
+    <input type="number" id="valor3">
+    <br><br>
+
+    <button id="compararValores">Verificar maior</button>
+
+    <p id="maiorResultado"></p>
+
+<!---------------------------------------------->
+    <br><br>
+    <h1>Questão 5: Celsius para Fahrenheit </h1>
+
+    <label for="temperaturaC">Temperatura em Celsius: </label>
+    <input type="number" id="temperaturaC">
+    <br><br>
+        
+    <button id="converterF"> Transformar em Fahrenheit</button>
+
+    <p id="saidaFahrenheit"></p>
+
+<!---------------------------------------------->
+    <br><br>
+    <h1>Questão 6: Investimento</h1>
+
+    <label for="valorInicial">Capital Inicial: </label>
+    <input type="text" id="valorInicial">
+    <br><br>
+
+    <label for="taxa">Taxa de juros</label>
+    <input type="number" id="taxa">
+    <br><br>
+
+    <label for="duracao">Tempo do Investimento</label>
+    <input type="number" id="duracao">
+    <br><br>
+
+    <button onclick="Retorno()">Calcular Montante</button>
+
+    <p id="saidaMontante"></p>
+
+<!---------------------------------------------->
+    <br><br>
+    <h1>Questão 7: Divisão por 3</h1>
+
+    <label>Digite um número: </label>
+    <input type="number" id="valorDivisao">
+    <br><br>
+
+    <button onclick="verificarDivisao()">Verificar</button>
+
+    <p id="veredito"></p>
+
+<!---------------------------------------------->
+    <br><br>
+    <h1>Questão 8: Meses do Ano</h1>
+
+    <label for="numeroMes">Digite um número de 1 a 12:</label>
+    <input type="number" id="numeroMes">
+    <br><br>
+
+    <button onclick="Mes()">Mostrar Mês</button>
+
+    <p id="nomeMes"></p>
+
+<!---------------------------------------------->
+    <br><br>
+    <h1>Questão 9: Ajuste Salarial</h1>
+
+    <label for="renda">Informe seu Salário: </label>
+    <input type="number" id="renda">
+    <br><br>
+
+    <button onclick="calcularsalario()">Calcular Reajuste</button>
+    <br><br>
+
+    <p id="rendaCorrigida"></p>
+
+<!---------------------------------------------->
+    <br><br>
+    <h1>Questão 10: Carro Econômico </h1>
+
+    <label for="quantia">Digite o valor que você tem: </label>
+    <input type="number" id="quantia">
+    <br><br>
+
+    <button onclick="calcularCombustivel()">Calcular</button>
+
+    <p id="respostaEconomia"></p>
+
+<!---------------------------------------------->
+    <br><br>
+    <h1>Questão 11: Conversão de Horas</h1>
+
+    <label for="tempoMinutos">Digite os minutos: </label>
+    <input type="number" id="tempoMinutos">
+    <br><br>
+
+    <button onclick="calcularTempo()">Calcular Tempo</button>
+
+    <p id="tempoConvertido"></p>
+
+<!---------------------------------------------->
+    <br><br>
+    <h1>Questão 12: Gorjeta do Garçom </h1>
+
+    <label for="valorConta">Digite o valor da conta: </label>
+    <input type="number" id="valorConta">
+    <br><br>
+
+    <button onclick="Calculargorjeta()">Calcular gorjeta</button>
+
+    <p id="valorGorjeta"></p>
+
+<!---------------------------------------------->
+    <br><br>
+    <h1>Questão 13: Empréstimo </h1>
+
+    <label for="rendaSolicitante">Digite seu salário: </label>
+    <input type="number" id="rendaSolicitante"><br><br>
+
+    <label for="valorParcela">Digite o valor da prestação: </label>
+    <input type="number" id="valorParcela"><br><br>
+
+    <button onclick="verificarEmprestimo()">Verificar emprestimo</button>
+
+    <p id="avaliacaoEmprestimo"></p>
+
+<!---------------------------------------------->
+    <br><br>
+    <h1>Questão 14: Desconto Previdenciário</h1>
+
+    <label for="rendaContribuinte">Digite o salário: </label>
+    <input type="number" id="rendaContribuinte">
+    <br><br>
+
+    <button onclick="calcularDescontoPrevidenciario()">Calcular Desconto</button>
+
+    <p id="valorDesconto"></p>
+
+<!---------------------------------------------->
+    <br><br>
+    <h1>Questão 15: Rendimento da Poupança</h1>
+
+    <label for="valorAplicado">Valor depositado: </label>
+    <input type="number" id="valorAplicado">
+    <br><br>
+
+    <button onclick="calcularRendimentoPoupanca()">Calcular Rendimento</button>
+
+    <p id="rendimentoFinal"></p>
+
+    <script src="script.js"></script>
+</body>
+</html>
